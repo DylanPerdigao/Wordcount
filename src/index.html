@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wordcount</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Wordcount</h1>
+    <div class="container">
+        <div class="box">
+            <div class="boxRow" id="resultWords">0</div>
+            <div class="boxRow">words</div>
+        </div>
+        <div class="box">
+            <div class="boxRow" id="resultCharacters">0</div>
+            <div class="boxRow">characters</div>
+        </div>
+        <div class="box">
+            <div class="boxRow" id="resultNewlines">0</div>
+            <div class="boxRow">newlines</div>
+        </div>
+    </div>
+    <span id="debug"></span>
+    <div class="container">
+        <textarea id="input" onkeyup="countWords()"></textarea>
+    </div>
+</body>
+</html>
